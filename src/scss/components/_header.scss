@@ -1,0 +1,60 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	background: linear-gradient(180deg, $black 13.02%, $gradientStart 100%);
+	padding: 1.7em 3em;
+
+	&__logo {
+		display: block;
+		max-width: 144px;
+		margin-left: 0.75em;
+
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__info {
+		font-weight: 700;
+		font-size: 42px;
+		line-height: 42px;
+		text-align: center;
+		min-width: 900px;
+		white-space: nowrap;
+
+		&--yellow {
+			color: $accent;
+		}
+	}
+
+	&__sign {
+		text-decoration: none;
+		text-align: center;
+		color: $accent;
+		font-weight: bold;
+		font-size: 17px;
+		line-height: 24px;
+		display: block;
+		width: 147px;
+		height: 38px;
+		border: 1.5px solid $accent;
+		text-transform: uppercase;
+		transform: skewX(-12deg);
+		margin-left: 10px;
+
+		&:hover {
+			text-decoration: none;
+			color: $accent;
+			background: $hoverBg;
+			transition: 0.3s;
+		}
+
+		& > * {
+			transform: skewX(12deg);
+			line-height: 37px;
+		}
+	}
+}
