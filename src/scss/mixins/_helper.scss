@@ -1,0 +1,43 @@
+/*
+  Clearfix 
+  Usage: @include clearfix();
+*/
+@mixin clearfix {
+	&::after {
+		clear: both;
+		content: '';
+		display: table;
+	}
+}
+
+/*
+  Text selection
+  Usage: @include font($color-selection, $color-selection-bg);
+*/
+@mixin text-selection($color-selection, $color-selection-bg) {
+	::-moz-selection {
+		// sass-lint:disable-line no-vendor-prefixes
+		background: $color-selection-bg;
+		color: $color-selection;
+		text-shadow: none;
+	}
+
+	::selection {
+		background: $color-selection-bg;
+		color: $color-selection;
+		text-shadow: none;
+	}
+}
+
+/*
+  Scalable font size, return size in px
+  Usage: @include scalable-font-size($font-size, $line-height);
+*/
+@mixin scalable-font-size($font-size, $line-height, $layout) {
+	$fontDif: $line-height - $font-size;
+	$layoutDif: $layout - $layout-min;
+
+	font-size: calc(
+		#{$font-size + 'px'} + #{$fontDif} * (100vw - #{$layout-min + 'px'}) / #{$layoutDif}
+	);
+}

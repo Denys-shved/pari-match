@@ -1,0 +1,24 @@
+/* User variables */
+$gradientStart: rgba(0, 0, 0, 0);
+$gradientBlack: rgba(0, 0, 0, 0.6);
+$hoverBg: rgba(110, 102, 102, 0.6);
+$black: #000000;
+$accent: #f8ff13;
+$font-size: 16px;
+$textcolor: #ffffff;
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+$font-family: Pari, sans-serif;
+
+/* Layout sizes */
+$layout-max: 1920;
+$layout-min: 320;
+
+/* Screen resolutions */
+$desktop: 1600px;
+$desktop-small: 1160px;
+$tablet-horizontal: 900px;
+$tablet: 740px;
+$mobile: 386px;
+
+/* Transitions */
+$transition-default: 0.35s ease-out;
