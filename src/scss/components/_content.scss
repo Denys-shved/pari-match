@@ -19,11 +19,19 @@
 		z-index: 1;
 	}
 
+	@include media('<=mobile') {
+		min-height: 460px;
+	}
+
 	&__dust {
 		position: absolute;
 		bottom: 0;
 		right: 0;
 		max-width: 100%;
+
+		@include media('<=desktop') {
+			max-width: 70%;
+		}
 	}
 
 	&__smoke {
@@ -37,6 +45,24 @@
 		align-self: flex-start;
 		margin-top: 137px;
 		margin-left: 110px;
+
+		@include media('<=desktop') {
+			margin-top: 63px;
+			margin-left: 4.46vw;
+		}
+
+		@include media('<=1300px') {
+			margin-top: 0.625em;
+		}
+
+		@include media('<=tablet') {
+			position: absolute;
+			margin-top: 0;
+		}
+
+		@include media('<=510px') {
+			margin-left: 1.25em;
+		}
 	}
 
 	&__title {
@@ -46,12 +72,40 @@
 		color: $accent;
 		width: 437px;
 		margin-bottom: 20px;
+
+		@include media('<=desktop') {
+			width: 411px;
+		}
+
+		@include media('<=1300px') {
+			width: 31vw;
+			line-height: 5vw;
+		}
+
+		@include media('<=tablet') {
+			width: 48vw;
+			margin-bottom: 0;
+			line-height: 7vw;
+		}
+
+		@include media('<=510px') {
+			width: 57vw;
+			line-height: 9vw;
+		}
+
+		@include media('<=mobile') {
+			width: 66vw;
+		}
 	}
 
 	&__link {
 		color: $textcolor;
 		font-size: 12px;
 		text-decoration: underline;
+
+		@include media('<=tablet') {
+			display: none;
+		}
 
 		&:hover {
 			color: $textcolor;
@@ -77,6 +131,10 @@
 		line-height: 72px;
 		text-transform: uppercase;
 
+		@include media('<=510px') {
+			line-height: 36px;
+		}
+
 		& > span {
 			color: $accent;
 		}
@@ -86,6 +144,17 @@
 		img {
 			max-width: 100%;
 		}
+
+		@include media('<=tablet') {
+			right: 10vw;
+		}
+
+		@include media('<=mobile') {
+			position: absolute;
+			bottom: 0;
+			right: -35px;
+			width: 249px;
+		}
 	}
 }
 
@@ -93,6 +162,19 @@
 	max-width: 794px;
 	max-height: 903px;
 	position: relative;
+
+	@include media('<=tablet') {
+		width: 600px;
+		left: 10vw;
+	}
+
+	@include media('<=mobile') {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 250px;
+		z-index: 1;
+	}
 
   &__bg {
     position: relative;
