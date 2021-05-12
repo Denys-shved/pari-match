@@ -122,12 +122,49 @@
   <div class="popup" id="modal-first" aria-hidden="true">
     <div class="popup__overlay" tabindex="-1" data-micromodal-close>
       <div class="popup__container" role="dialog" aria-modal="true" aria-labelledby="modal-first-title">
+        <h3 id="modal-first-title" class="popup__title">congratulations, you won:</h3>
 
         <button class="popup__close" aria-label="Close modal" data-micromodal-close></button>
 
         <div id="modal-first-content" class="popup__content">
+          <div class="popup__quantity">
+            <p>500$</p>
+          </div>
 
+          <div class="popup__spins">
+            <p>Unused spins left: 1</p>
+          </div>
+
+          <button id="twist-more-btn" class="popup__btn">
+            <span class="popup__btn-name">twist more</span>
+          </button>
         </div>
+        <img class="popup__smoke" src="images/content/smoke.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="modal-second" aria-hidden="true">
+    <div class="popup__overlay" tabindex="-1" data-micromodal-close>
+      <div class="popup__container" role="dialog" aria-modal="true" aria-labelledby="modal-second-title">
+        <h3 id="modal-second-title" class="popup__title">congratulations, you won:</h3>
+
+        <button class="popup__close" aria-label="Close modal" data-micromodal-close></button>
+
+        <div id="modal-second-content" class="popup__content">
+          <div class="popup__quantity">
+            <p>500$ + 29 FS</p>
+          </div>
+
+          <div class="popup__spins">
+            <p>Register and collect prizes</p>
+          </div>
+
+          <button id="prize-btn" class="popup__btn">
+            <span class="popup__btn-name">pick up prizes</span>
+          </button>
+        </div>
+        <img class="popup__smoke" src="images/content/smoke.png" alt="">
       </div>
     </div>
   </div>
