@@ -10,11 +10,22 @@
 	left: 0;
 	z-index: 10;
 
+	@include media('<=1300px') {
+		position: relative;
+		flex-direction: column;
+		align-items: center;
+		background: $black;
+	}
+
 	&__section {
 		flex-grow: 2;
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
+
+		@include media('<=1300px') {
+			padding-top: 1.25em;
+		}
 
 		& > a:not(:last-child) {
 			margin-right: 0.625em;
@@ -28,10 +39,19 @@
 
 		&--trust {
 			flex-grow: 1;
+
+			@include media('<=1300px') {
+				padding-top: 1.25em;
+			}
 		}
 
 		&--socials {
 			flex-grow: initial;
+
+			@include media('<=1300px') {
+				padding-top: 1.25em;
+				padding-bottom: 1.25em;
+			}
 
 			& > a:not(:last-child) {
 				margin-right: 1.25em;
