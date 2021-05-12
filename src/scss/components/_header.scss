@@ -5,6 +5,18 @@
 	background: linear-gradient(180deg, $black 13.02%, $gradientStart 100%);
 	padding: 1.7em 3em;
 
+	@include media('<=1300px') {
+		flex-wrap: wrap;
+	}
+
+	@include media('<=tabletHorizontal') {
+		padding: 1.7em 1.25em;
+	}
+
+	@include media('<=510px') {
+		padding-top: 0.9em;
+	}
+
 	&__logo {
 		display: block;
 		max-width: 144px;
@@ -15,6 +27,14 @@
 			width: 100%;
 			height: auto;
 		}
+
+		@include media('<=tablet') {
+			margin-left: 1.25em;
+		}
+
+		@include media('<=510px') {
+			max-width: 81px;
+		}
 	}
 
 	&__info {
@@ -24,6 +44,22 @@
 		text-align: center;
 		min-width: 900px;
 		white-space: nowrap;
+
+		@include media('<=1300px') {
+			@include scalable-font-size(14, 42, 1300);
+			align-self: center;
+			padding: 20px;
+			margin: 0px auto;
+			order: 3;
+		}
+
+		@include media('<=tabletHorizontal') {
+			min-width: 0;
+		}
+
+		@include media('<=mobile') {
+			padding: 10px;
+		}
 
 		&--yellow {
 			color: $accent;
@@ -45,6 +81,13 @@
 		transform: skewX(-12deg);
 		margin-left: 10px;
 
+		@include media('<=510px') {
+			font-size: 14px;
+			line-height: 22px;
+			width: 126px;
+			height: 22px;
+		}
+
 		&:hover {
 			text-decoration: none;
 			color: $accent;
@@ -55,6 +98,10 @@
 		& > * {
 			transform: skewX(12deg);
 			line-height: 37px;
+
+			@include media('<=510px') {
+				line-height: 22px;
+			}
 		}
 	}
 }
