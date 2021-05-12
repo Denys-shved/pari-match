@@ -1,8 +1,8 @@
 {
   "author": "Denys Shved <s.laxinua@gmail.com>",
   "name": "frontend-webpack-boilerplate",
-  "version": "5.6.1",
-  "description": "Starter project template boilerplate based on Webpack with SASS/PostCSS and babel ES6/7 support.",
+  "version": "1.0.0",
+  "description": "Test website pari match",
   "homepage": "",
   "browserslist": [
     "last 2 versions",
@@ -52,13 +52,6 @@
   "engines": {
     "node": "^10 || ^12 || >=14"
   },
-  "keywords": [
-    "webpack",
-    "boilerplate",
-    "template",
-    "setup"
-  ],
-  "license": "MIT",
   "private": false,
   "scripts": {
     "build": "webpack --config configuration/webpack.dev.config.js --mode=development",
