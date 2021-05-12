@@ -1,0 +1,41 @@
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 1.625em 2.45em;
+	background: linear-gradient(180deg, $gradientStart 0%, $gradientBlack 100%);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+
+	&__section {
+		flex-grow: 2;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+
+		& > a:not(:last-child) {
+			margin-right: 0.625em;
+		}
+
+		&--payment {
+			& > a:not(:last-child) {
+				margin-right: 0.66em;
+			}
+		}
+
+		&--trust {
+			flex-grow: 1;
+		}
+
+		&--socials {
+			flex-grow: initial;
+
+			& > a:not(:last-child) {
+				margin-right: 1.25em;
+			}
+		}
+	}
+}
