@@ -19,8 +19,7 @@
   &__container {
     background: $black;
     padding: 2em;
-    width: 100%;
-    max-width: 682px;
+    
     max-height: 100vh;
     border-radius: 4px;
     overflow-y: auto;
@@ -29,6 +28,12 @@
     box-shadow: 0px 0px 25px $accent;
     will-change: transform;
     z-index: 15;
+
+
+  }
+
+  &__content{
+    padding: 2.08vw 5.2vw;
   }
 
   &__close {
@@ -40,30 +45,38 @@
     outline: none;
     padding: 0;
     position: absolute;
-    top: 24px;
-    right: 24px;
+    top: 16px;
+    right: 16px;
     cursor: pointer;
   }
 
+  
+
   &__title {
-    font-size: 44px;
-    line-height: 72px;
+    @include scalable-font-size(16, 44, 1920);
+    line-height: 3.75vw;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    
+    
   }
 
   &__quantity {
     font-weight: bold;
-    font-size: 120px;
-    line-height: 120px;
+    @include scalable-font-size(44, 120, 1920);
+    line-height: 6.25vw;
     text-align: center;
     color: $accent;
+
+    
+
   }
 
   &__spins {
-    font-size: 24px;
-    line-height: 30px;
+    @include scalable-font-size(12, 24, 1920);
+    line-height: 3.25vw;
     text-align: center;
     margin: 30px auto 20px;
   }
@@ -72,13 +85,13 @@
     display: block;
     margin: 0 auto;
     background: $accent;
-    width: 361px;
-    height: 67px;
+    width: 18.8vw;
+    height: 3.49;
     border: none;
     color: $black;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 67px;
+    @include scalable-font-size(14, 30, 1920);
+    line-height: 3.49vw;
     text-align: center;
     text-transform: uppercase;
     transform: skewX(-12deg);
@@ -92,11 +105,15 @@
       background: $hoverBg;
       transition: 0.7s;
     }
+    @include media('<=tablet') {
+      width: 161px;
+    }
   }
 
   &__btn-name {
+    @include scalable-font-size(14, 30, 1920);
     transform: skewX(12deg);
-    line-height: 37px;
+    line-height: 1.927vw;
   }
 
   &__smoke {

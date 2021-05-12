@@ -17,6 +17,10 @@
 		background: $black;
 	}
 
+	@include media('<=mobile') {
+		padding: 1.625em 1.45em;
+	}
+
 	&__section {
 		flex-grow: 2;
 		display: flex;
