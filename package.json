@@ -1,5 +1,5 @@
 {
-  "author": "Denis Shved <s.laxinua@gmail.com>",
+  "author": "Denys Shved <s.laxinua@gmail.com>",
   "name": "frontend-webpack-boilerplate",
   "version": "5.6.1",
   "description": "Starter project template boilerplate based on Webpack with SASS/PostCSS and babel ES6/7 support.",

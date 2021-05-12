@@ -17,12 +17,6 @@ html {
 	flex-direction: column;
 	justify-content: space-between;
 	position: relative;
-
-	@include media('<=mobile') {
-		background: url('../images/design/background-mobile.jpg') top center
-			no-repeat;
-		background-size: cover;
-	}
 }
 
 h1 {
