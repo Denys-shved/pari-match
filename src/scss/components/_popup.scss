@@ -101,7 +101,27 @@
 
   &__smoke {
     position: absolute;
-    left: 0;
     bottom: 0;
+    left: -701px;
+  }
+
+  &.is-open {
+    display: block;
+  }
+
+  &[aria-hidden="false"] > &__overlay {
+    animation: fadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+  }
+
+  &[aria-hidden="false"] > &__container {
+    animation: slideIn .3s cubic-bezier(0, 0, .2, 1);
+  }
+
+  &[aria-hidden="true"] &__overlay {
+    animation: fadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+  }
+
+  &[aria-hidden="true"] &__container {
+    animation: slideOut .3s cubic-bezier(0, 0, .2, 1);
   }
 }
