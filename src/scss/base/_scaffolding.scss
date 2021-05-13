@@ -18,7 +18,7 @@ html {
 	justify-content: space-between;
 	position: relative;
 
-	@include media('<=1300') {
+	@include media('<=1300px') {
 		justify-content: flex-start;
 		min-height: auto;
 	}
