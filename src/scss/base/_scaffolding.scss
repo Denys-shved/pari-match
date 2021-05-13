@@ -18,7 +18,7 @@ html {
 	justify-content: space-between;
 	position: relative;
 
-	@include media('<=tabletHorizontal') {
+	@include media('<=1300') {
 		justify-content: flex-start;
 		min-height: auto;
 	}
