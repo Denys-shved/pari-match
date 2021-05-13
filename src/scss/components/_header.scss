@@ -66,25 +66,27 @@
 	}
 
 	&__sign {
+		width: 147px;
+		height: auto;
+		margin-left: 10px;
+		padding: 9px 0px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1.5px solid $accent;
 		text-decoration: none;
 		text-align: center;
 		color: $accent;
 		font-weight: bold;
 		font-size: 17px;
-		line-height: 24px;
-		display: block;
-		width: 147px;
-		height: 38px;
-		border: 1.5px solid $accent;
+		line-height: 17px;
 		text-transform: uppercase;
 		transform: skewX(-12deg);
-		margin-left: 10px;
 
 		@include media('<=510px') {
-			font-size: 14px;
-			line-height: 22px;
 			width: 126px;
-			height: 22px;
+			font-size: 14px;
+			padding: 4px 0px 6px;
 		}
 
 		&:hover {
@@ -96,11 +98,8 @@
 
 		& > * {
 			transform: skewX(12deg);
-			line-height: 37px;
-
-			@include media('<=510px') {
-				line-height: 22px;
-			}
+			font-size: inherit;
+			line-height: inherit;
 		}
 	}
 }
