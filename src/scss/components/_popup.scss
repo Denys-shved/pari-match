@@ -106,7 +106,8 @@
       transition: 0.7s;
     }
     @include media('<=tablet') {
-      width: 161px;
+      padding: 7px 15px;
+      width: auto;
     }
   }
 
@@ -114,6 +115,7 @@
     @include scalable-font-size(14, 30, 1920);
     transform: skewX(12deg);
     line-height: 1.927vw;
+    white-space: nowrap;
   }
 
   &__smoke {
